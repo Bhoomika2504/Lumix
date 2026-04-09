@@ -1,0 +1,14 @@
+[Unit]
+Description=Lumix SmartHUD System
+After=network.target
+
+[Service]
+ExecStart=/home/pi/LUMIX/venv/bin/python /home/pi/LUMIX/main.py
+WorkingDirectory=/home/pi/LUMIX
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target

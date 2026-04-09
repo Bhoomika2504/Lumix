@@ -1,0 +1,35 @@
+# SmartHUD Global Configuration
+hardware:
+  sonar:
+    left: { trig: 17, echo: 27 }
+    right: { trig: 22, echo: 23 }
+    rear: { trig: 24, echo: 25 }
+    threshold_cm: 150
+    poll_rate: 0.1
+  imu:
+    i2c_bus: 1
+    i2c_address: 0x68
+    crash_threshold_g: 2.5
+    poll_rate: 0.05
+  gps:
+    port: "/dev/ttyAMA0"
+    baud: 9600
+
+api_keys:
+  gemini: "YOUR_GEMINI_API_KEY"
+  pvporcupine: "YOUR_PORCUPINE_KEY"
+  openrouteservice: "YOUR_ORS_KEY"
+
+ui:
+  width: 1280
+  height: 720
+  fps: 30
+  colors:
+    background: [0, 0, 0]
+    primary: [0, 191, 255]
+    alert: [204, 0, 0]
+    nav: [0, 255, 136]
+
+emergency:
+  countdown_seconds: 30
+  contacts: ["+1234567890"]

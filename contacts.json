@@ -1,0 +1,10 @@
+{
+    "emergency": {
+        "name": "Ambulance",
+        "phone": "101"
+    },
+    "family": {
+        "name": "Mumma",
+        "phone": "1234567890"
+    }
+}
